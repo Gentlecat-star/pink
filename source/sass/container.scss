@@ -1,0 +1,11 @@
+/**
+* Определение контейнера страницы
+*/
+.container {
+  max-width: $containerMaxWidth + px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}

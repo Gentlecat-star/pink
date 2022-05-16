@@ -1,0 +1,1 @@
+<!-- Put all image files into this directory -->

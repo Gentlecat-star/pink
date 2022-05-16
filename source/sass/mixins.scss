@@ -1,0 +1,16 @@
+//Миксин для подключения шрифтов из папки fonts для функции шрифтов в файле gulpfile.js
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+
+//Миксин для адаптивного свойства
+
+@mixin adaptiveProperty($property, $initialSize, $resultSize, $firstBreakpoint, $lastBreakpoint) {
+  #{$property}: calc(#{$resultSize}px + (#{$initialSize} - #{$resultSize}) * ((100vw - #{$lastBreakpoint}px) / (#{$firstBreakpoint} - #{$lastBreakpoint})));
+}

@@ -1,0 +1,17 @@
+//Подключение миксинов
+@import "mixins";
+
+// Подключение шрифтов
+@import "fonts";
+
+// Переменные
+@import "variables.scss";
+
+// Глобальные свойства
+@import "global.scss";
+
+// Контейнер
+@import "container.scss";
+
+// Page
+@import "page.scss";
