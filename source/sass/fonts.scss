@@ -1,3 +1,6 @@
 // Пример подключения шрифта. Файлы должны лежать в папке fonts
 // @include font(имя_шрифта, файл_шрифта, вес_шрифта, стиль_шрифта);
 // @include font("Roboto", "Roboto 400", "400", "normal");
+@include font("Open Sans", "opensansregular", "400", "normal");
+@include font("Open Sans", "opensanslight", "300", "normal");
+@include font("Open Sans", "opensansbold", "700", "normal");

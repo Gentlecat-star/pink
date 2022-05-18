@@ -14,3 +14,15 @@
 @mixin adaptiveProperty($property, $initialSize, $resultSize, $firstBreakpoint, $lastBreakpoint) {
   #{$property}: calc(#{$resultSize}px + (#{$initialSize} - #{$resultSize}) * ((100vw - #{$lastBreakpoint}px) / (#{$firstBreakpoint} - #{$lastBreakpoint})));
 }
+
+@mixin font-sans(
+  $size: 14px,
+  $height: 18px,
+  $color: #000000,
+  $font-weight: 400) {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: $size;
+  line-height: $height;
+  font-weight: $font-weight;
+  color: $color;
+}

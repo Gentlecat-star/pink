@@ -3,9 +3,13 @@
 }
 
 .page__body {
+  display: flex;
+  flex-direction: column;
   min-height: 100%;
   margin: 0;
-  font-family: "Arial", "Helvetica", sans-serif;
+
+
+  @include font-sans(18px, 30px, $basic-grey);
 }
 
 .page__body.scroll-lock {
